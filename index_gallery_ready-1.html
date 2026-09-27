@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#6b183f">
+
+<meta name="description"
+content="রঘুপুর সার্বজনীন পূজা মন্ডপ - শুভ শারদীয়া দুর্গোৎসব">
+
+<title>রঘুপুর সার্বজনীন পূজা মন্ডপ</title>
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+    "Noto Sans Bengali",
+    "SolaimanLipi",
+    Arial,
+    sans-serif;
+
+    background:#fff8fb;
+    color:#351426;
+    line-height:1.7;
+}
+
+
+/* HEADER */
+
+header{
+    background:
+    linear-gradient(
+        135deg,
+        #4e0d2c,
+        #6b183f,
+        #9b3764
+    );
+
+    color:white;
+    padding:22px 15px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:15px;
+    text-align:center;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.18);
+}
+
+.logo{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+
+    background:
+    rgba(255,255,255,.15);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:32px;
+}
+
+header h1{
+    font-size:27px;
+    line-height:1.3;
+}
+
+header p{
+    margin-top:3px;
+    opacity:.9;
+}
+
+
+/* NAV */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:4px;
+    padding:10px;
+
+    overflow-x:auto;
+    white-space:nowrap;
+
+    box-shadow:
+    0 3px 15px rgba(0,0,0,.08);
+}
+
+nav a{
+    text-decoration:none;
+    color:#5b1637;
+
+    font-weight:bold;
+
+    padding:8px 12px;
+    border-radius:20px;
+
+    transition:.25s;
+}
+
+nav a:hover{
+    background:#6b183f;
+    color:white;
+}
+
+
+/* HERO */
+
+.hero{
+    min-height:520px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    padding:50px 20px;
+
+    background:
+    linear-gradient(
+        rgba(55,5,28,.62),
+        rgba(55,5,28,.62)
+    ),
+    radial-gradient(
+        circle at top,
+        #d986a7,
+        #5a1235 70%
+    );
+
+    color:white;
+}
+
+.hero-content{
+    max-width:750px;
+
+    padding:35px 25px;
+
+    border-radius:25px;
+
+    background:
+    rgba(255,255,255,.10);
+
+    backdrop-filter:blur(8px);
+
+    border:
+    1px solid rgba(255,255,255,.25);
+}
+
+.welcome{
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:15px;
+    line-height:1.3;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.hero button{
+    margin-top:25px;
+
+    padding:13px 28px;
+
+    border:0;
+    border-radius:30px;
+
+    background:white;
+    color:#6b183f;
+
+    font-weight:bold;
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+
+/* COUNTDOWN */
+
+.countdown-section{
+    padding:40px 15px;
+
+    background:
+    linear-gradient(
+        180deg,
+        #fff7fa,
+        #f9eaf1
+    );
+
+    text-align:center;
+}
+
+.countdown-section h2{
+    color:#6b183f;
+    margin-bottom:8px;
+}
+
+.countdown-subtitle{
+    color:#777;
+    margin-bottom:25px;
+}
+
+.countdown{
+    max-width:850px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:15px;
+}
+
+.time-box{
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px 10px;
+
+    box-shadow:
+    0 8px 25px rgba(107,24,63,.10);
+
+    border:
+    1px solid #f0dce5;
+}
+
+.time-box span{
+    display:block;
+
+    font-size:38px;
+    font-weight:bold;
+
+    color:#6b183f;
+
+    line-height:1.2;
+}
+
+.time-box small{
+    color:#777;
+    font-weight:bold;
+}
+
+.countdown-finished{
+    display:none;
+
+    max-width:700px;
+    margin:auto;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:white;
+    color:#6b183f;
+
+    font-size:22px;
+    font-weight:bold;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.08);
+}
+
+
+/* SECTION */
+
+.section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.section > h2{
+    text-align:center;
+
+    color:#6b183f;
+
+    font-size:30px;
+
+    margin-bottom:25px;
+}
+
+.section > p{
+    max-width:850px;
+    margin:auto;
+
+    text-align:center;
+
+    color:#555;
+
+    font-size:17px;
+}
+
+
+/* COMMITTEE */
+
+.cards{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(210px,1fr));
+
+    gap:20px;
+}
+
+.card{
+    background:white;
+
+    padding:22px 15px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:
+    1px solid #f0dce5;
+
+    box-shadow:
+    0 7px 25px rgba(0,0,0,.07);
+
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.person{
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+
+    margin:0 auto 15px;
+
+    background:#f8eaf0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:48px;
+
+    overflow:hidden;
+}
+
+.card h3{
+    color:#4f122f;
+    font-size:18px;
+    margin-bottom:4px;
+}
+
+.card p{
+    color:#777;
+}
+
+.person-img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.phone-link{
+    color:#6b183f;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+
+/* POSITION TITLE */
+.position-title{
+    display:inline-block;
+    margin-bottom:6px;
+    padding:4px 11px;
+    border-radius:20px;
+    background:#f8eaf0;
+    color:#6b183f;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.phone-trigger{
+    border:0;
+    background:transparent;
+    color:#6b183f;
+    font:inherit;
+    font-weight:bold;
+    cursor:pointer;
+    padding:5px 8px;
+    border-radius:10px;
+}
+
+.phone-trigger:hover{
+    background:#f8eaf0;
+}
+
+.no-phone{
+    color:#aaa !important;
+    font-size:13px;
+}
+
+
+/* CONTACT MODAL */
+.contact-modal{
+    position:fixed;
+    inset:0;
+    z-index:5000;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    background:rgba(0,0,0,.55);
+}
+
+.contact-modal.show{
+    display:flex;
+}
+
+.contact-modal-box{
+    width:min(360px,100%);
+    background:white;
+    border-radius:24px;
+    padding:25px 20px;
+    text-align:center;
+    box-shadow:0 15px 45px rgba(0,0,0,.25);
+    animation:modalIn .2s ease;
+}
+
+@keyframes modalIn{
+    from{
+        transform:scale(.92);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.contact-modal-box h3{
+    color:#6b183f;
+    margin-bottom:5px;
+}
+
+.contact-modal-box p{
+    color:#777;
+    margin-bottom:20px;
+}
+
+.modal-actions{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.modal-actions a{
+    display:block;
+    padding:12px 8px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.modal-call{
+    background:#f3e4eb;
+    color:#6b183f;
+}
+
+.modal-whatsapp{
+    background:#e8f7ee;
+    color:#168743;
+}
+
+.modal-close{
+    width:100%;
+    margin-top:12px;
+    padding:11px;
+    border:0;
+    border-radius:14px;
+    background:#f3f3f3;
+    color:#555;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* SCHEDULE */
+
+.schedule{
+    max-width:850px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(230px,1fr));
+
+    gap:18px;
+}
+
+.schedule > div{
+    background:white;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    text-align:center;
+
+    border:
+    1px solid #f0dce5;
+
+    box-shadow:
+    0 6px 20px rgba(0,0,0,.06);
+}
+
+.schedule h3{
+    color:#6b183f;
+    margin-bottom:5px;
+}
+
+
+/* NOTICE */
+
+.notice{
+    max-width:850px;
+    margin:auto;
+
+    background:white;
+
+    padding:25px;
+
+    border-left:
+    5px solid #6b183f;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 7px 25px rgba(0,0,0,.07);
+}
+
+.notice h3{
+    color:#6b183f;
+    margin-bottom:10px;
+}
+
+.notice p{
+    color:#555;
+    white-space:pre-line;
+}
+
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:18px;
+}
+
+.gallery-item{
+    height:250px;
+
+    background:#f6e8ee;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 7px 25px rgba(0,0,0,.08);
+}
+
+.gallery-item img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.3s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.05);
+}
+
+.gallery-empty{
+    grid-column:1/-1;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    background:white;
+
+    border-radius:18px;
+
+    color:#888;
+}
+
+
+
+
+/* FIREBASE GALLERY */
+.gallery-item{
+    position:relative;
+    cursor:pointer;
+}
+
+.gallery-item img{
+    cursor:pointer;
+}
+
+.gallery-caption{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:28px 12px 11px;
+    background:linear-gradient(transparent,rgba(0,0,0,.72));
+    color:white;
+    font-size:14px;
+    font-weight:bold;
+    text-align:center;
+}
+
+/* CONTACT */
+
+.contact-box{
+    max-width:750px;
+    margin:auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    box-shadow:
+    0 7px 25px rgba(0,0,0,.07);
+
+    text-align:center;
+}
+
+.contact-box p{
+    margin:8px 0;
+    color:#555;
+}
+
+.map-button{
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:13px 25px;
+
+    background:#6b183f;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-weight:bold;
+}
+
+
+/* FOOTER */
+
+footer{
+    background:#421025;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px 15px;
+
+    margin-top:20px;
+}
+
+footer p{
+    margin:5px 0;
+}
+
+.developer-credit{
+    margin-top:12px;
+
+    font-size:14px;
+
+    opacity:.85;
+}
+
+
+/* ADMIN */
+
+.admin-button{
+    display:block;
+
+    width:max-content;
+
+    margin:25px auto 35px;
+
+    padding:12px 25px;
+
+    background:#6b183f;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    box-shadow:
+    0 5px 15px rgba(107,24,63,.25);
+}
+
+
+/* LOADING */
+
+.firebase-loading{
+    text-align:center;
+
+    padding:20px;
+
+    color:#777;
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    header h1{
+        font-size:21px;
+    }
+
+    .logo{
+        width:48px;
+        height:48px;
+        font-size:25px;
+    }
+
+    nav{
+        justify-content:flex-start;
+    }
+
+    nav a{
+        font-size:14px;
+        padding:7px 10px;
+    }
+
+    .hero{
+        min-height:450px;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .countdown{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .time-box span{
+        font-size:30px;
+    }
+
+    .section{
+        padding:45px 15px;
+    }
+
+    .section > h2{
+        font-size:25px;
+    }
+
+    .gallery{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .gallery-item{
+        height:180px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo">
+        🪔
+    </div>
+
+    <div>
+
+        <h1>
+            রঘুপুর সার্বজনীন পূজা মন্ডপ
+        </h1>
+
+        <p>
+            শুভ শারদীয়া 🌺
+        </p>
+
+    </div>
+
+</header>
+
+
+<!-- NAV -->
+
+<nav>
+
+    <a href="#">
+        হোম
+    </a>
+
+    <a href="#about">
+        আমাদের সম্পর্কে
+    </a>
+
+    <a href="#committee">
+        কমিটি
+    </a>
+
+    <a href="#schedule">
+        সময়সূচি
+    </a>
+
+    <a href="#notice">
+        নোটিশ
+    </a>
+
+    <a href="#gallery">
+        গ্যালারি
+    </a>
+
+    <a href="#contact">
+        যোগাযোগ
+    </a>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="welcome">
+            🌺 স্বাগতম 🌺
+        </p>
+
+        <h2>
+            শুভ শারদীয় দুর্গোৎসব
+        </h2>
+
+        <p>
+            রঘুপুর সার্বজনীন পূজা মন্ডপের পক্ষ থেকে
+            সকল ভক্তবৃন্দকে জানাই আন্তরিক শুভেচ্ছা ও অভিনন্দন।
+        </p>
+
+        <button
+        onclick="document.getElementById('about').scrollIntoView()">
+
+            পূজার বিস্তারিত
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- COUNTDOWN -->
+
+<section class="countdown-section">
+
+    <h2>
+        🕉️ দুর্গোৎসবের অপেক্ষা
+    </h2>
+
+    <p class="countdown-subtitle">
+        শুভ শারদীয় দুর্গোৎসব শুরু হতে বাকি
+    </p>
+
+    <div
+    id="countdown"
+    class="countdown">
+
+        <div class="time-box">
+
+            <span id="days">
+                00
+            </span>
+
+            <small>
+                দিন
+            </small>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <span id="hours">
+                00
+            </span>
+
+            <small>
+                ঘণ্টা
+            </small>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <span id="minutes">
+                00
+            </span>
+
+            <small>
+                মিনিট
+            </small>
+
+        </div>
+
+
+        <div class="time-box">
+
+            <span id="seconds">
+                00
+            </span>
+
+            <small>
+                সেকেন্ড
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div
+    id="countdownFinished"
+    class="countdown-finished">
+
+        🌺 শুভ শারদীয় দুর্গোৎসব! 🌺
+        <br>
+        মা দুর্গার আগমনে সবাইকে জানাই আন্তরিক শুভেচ্ছা।
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section
+id="about"
+class="section">
+
+    <h2>
+        🌺 আমাদের সম্পর্কে
+    </h2>
+
+    <p>
+
+        রঘুপুর সার্বজনীন পূজা মন্ডপ একটি
+        ঐতিহ্যবাহী সার্বজনীন দুর্গাপূজার আয়োজন।
+        প্রতি বছর গ্রামের সকলের সহযোগিতা,
+        ভালোবাসা ও অংশগ্রহণে আনন্দঘন পরিবেশে
+        দুর্গোৎসব অনুষ্ঠিত হয়।
+
+        <br><br>
+
+        ধর্ম-বর্ণ নির্বিশেষে সকলের অংশগ্রহণে
+        এই উৎসব হয়ে ওঠে আনন্দ, সম্প্রীতি ও
+        সৌহার্দ্যের মিলনমেলা।
+
+    </p>
+
+</section>
+
+
+<!-- COMMITTEE -->
+
+<section
+id="committee"
+class="section">
+
+    <h2>
+        🌺 পূজা কমিটি
+    </h2>
+
+    <div
+    id="committeeCards"
+    class="cards">
+
+        <div class="firebase-loading">
+            তথ্য লোড হচ্ছে...
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SCHEDULE -->
+
+<section
+id="schedule"
+class="section">
+
+    <h2>
+        📅 পূজার সময়সূচি
+    </h2>
+
+    <div class="schedule">
+
+        <div>
+            <h3>ষষ্ঠী</h3>
+            <p id="schedule-shasthi">
+                সন্ধ্যা ৭:০০ — বোধন
+            </p>
+        </div>
+
+        <div>
+            <h3>সপ্তমী</h3>
+            <p id="schedule-saptami">
+                সকাল ৮:০০ — পূজা
+            </p>
+        </div>
+
+        <div>
+            <h3>অষ্টমী</h3>
+            <p id="schedule-ashtami">
+                সকাল ১০:০০ — অঞ্জলি
+            </p>
+        </div>
+
+        <div>
+            <h3>নবমী</h3>
+            <p id="schedule-navami">
+                সন্ধ্যা ৭:০০ — আরতি
+            </p>
+        </div>
+
+        <div>
+            <h3>দশমী</h3>
+            <p id="schedule-dashami">
+                বিকাল ৪:০০ — বিসর্জন
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- NOTICE -->
+
+<section
+id="notice"
+class="section">
+
+    <h2>
+        📢 নোটিশ
+    </h2>
+
+    <div class="notice">
+
+        <h3>
+            বিশেষ ঘোষণা
+        </h3>
+
+        <p id="noticeText">
+            সকল ভক্তবৃন্দকে পূজার সকল অনুষ্ঠানে
+            অংশগ্রহণ করার জন্য আন্তরিকভাবে
+            আমন্ত্রণ জানানো হচ্ছে।
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section
+id="gallery"
+class="section">
+
+    <h2>
+        🖼️ ফটো গ্যালারি
+    </h2>
+
+    <div
+    id="galleryBox"
+    class="gallery">
+
+        <div class="gallery-empty">
+
+            🖼️<br>
+            গ্যালারি প্রস্তুত করা হচ্ছে।
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section
+id="contact"
+class="section">
+
+    <h2>
+        📞 যোগাযোগ
+    </h2>
+
+    <div class="contact-box">
+
+        <p>
+            📍 <strong>গ্রাম:</strong>
+            <span id="contactVillage">
+                রঘুপুর
+            </span>
+        </p>
+
+        <p>
+            📍 <strong>উপজেলা:</strong>
+            <span id="contactUpazila">
+                ওসমানীনগর
+            </span>
+        </p>
+
+        <p>
+            📍 <strong>জেলা:</strong>
+            <span id="contactDistrict">
+                সিলেট
+            </span>
+        </p>
+
+        <p>
+            📞 <strong>ফোন:</strong>
+
+            <a
+            id="contactPhoneLink"
+            class="phone-link"
+            href="tel:01323688596">
+
+                01323688596
+
+            </a>
+
+        </p>
+
+
+        <a
+        class="map-button"
+        href="https://maps.app.goo.gl/Esfc3jjnK4GDeQyf6"   target="_blank"
+        rel="noopener noreferrer">
+
+            📍 Google Maps-এ লোকেশন দেখুন
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 রঘুপুর সার্বজনীন পূজা মন্ডপ
+    </p>
+
+    <p>
+        মা দুর্গার আশীর্বাদ সবার উপর বর্ষিত হোক ❤️
+    </p>
+
+    <p class="developer-credit">
+
+        Website designed and developed by
+        <strong>Noyon</strong>
+
+    </p>
+
+</footer>
+
+
+<!-- ADMIN BUTTON -->
+
+<a
+href="admin.html"
+class="admin-button">
+
+    🔐 Admin Panel
+
+</a>
+
+
+<!-- CONTACT OPTIONS MODAL -->
+<div
+    id="contactModal"
+    class="contact-modal"
+    onclick="if(event.target===this) closeContactOptions()"
+>
+    <div class="contact-modal-box">
+
+        <h3 id="contactModalName">
+            যোগাযোগ
+        </h3>
+
+        <p id="contactModalPhone">
+            -
+        </p>
+
+        <div class="modal-actions">
+
+            <a
+                id="contactCall"
+                class="modal-call"
+                href="#"
+            >
+                📞 কল
+            </a>
+
+            <a
+                id="contactWhatsApp"
+                class="modal-whatsapp"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                💬 WhatsApp
+            </a>
+
+        </div>
+
+        <button
+            class="modal-close"
+            type="button"
+            onclick="closeContactOptions()"
+        >
+            বন্ধ করুন
+        </button>
+
+    </div>
+</div>
+
+
+<!-- FIREBASE + WEBSITE JAVASCRIPT -->
+
+<script type="module">
+
+import {
+    initializeApp
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+
+import {
+    getFirestore,
+    doc,
+    onSnapshot
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+
+/* =====================================================
+   FIREBASE CONFIG
+===================================================== */
+
+const firebaseConfig = {
+
+    apiKey:
+        "AIzaSyCF2nRNM6yjW-1Mv910iW5pwoHkyBgWb-0",
+
+    authDomain:
+        "roghupurdurgapuja-b95f9.firebaseapp.com",
+
+    projectId:
+        "roghupurdurgapuja-b95f9",
+
+    storageBucket:
+        "roghupurdurgapuja-b95f9.firebasestorage.app",
+
+    messagingSenderId:
+        "763168095845",
+
+    appId:
+        "1:763168095845:web:4596d89deb42f52cb2108c",
+
+    measurementId:
+        "G-ZSE74K2D2Y"
+
+};
+
+
+/* =====================================================
+   FIREBASE START
+===================================================== */
+
+const app =
+    initializeApp(firebaseConfig);
+
+const db =
+    getFirestore(app);
+
+
+/* =====================================================
+   SAME DOCUMENT USED BY ADMIN
+===================================================== */
+
+const siteRef =
+    doc(
+        db,
+        "pujaData",
+        "site"
+    );
+
+
+/* =====================================================
+   COMMITTEE POSITIONS
+===================================================== */
+
+const positions = [
+
+    "সভাপতি",
+    "সহ-সভাপতি ১",
+    "সহ-সভাপতি ২",
+    "সহ-সভাপতি ৩",
+    "সাধারণ সম্পাদক",
+    "সহ-সাধারণ সম্পাদক",
+    "কোষাধ্যক্ষ",
+    "সহ-কোষাধ্যক্ষ",
+    "সাংগঠনিক সম্পাদক",
+    "সহ-সাংগঠনিক সম্পাদক",
+    "দপ্তর সম্পাদক",
+    "প্রচার সম্পাদক",
+    "গ্রন্থনা ও প্রকাশনা সম্পাদক",
+    "সাংস্কৃতিক সম্পাদক",
+    "মহিলা বিষয়ক সম্পাদক"
+
+];
+
+
+/* =====================================================
+   CREATE ONE MEMBER CARD
+===================================================== */
+
+function makeWhatsAppNumber(phone){
+    let number = String(phone).replace(/\D/g, "");
+
+    if(number.startsWith("0")){
+        number = "880" + number.substring(1);
+    }
+
+    return number;
+}
+
+
+function openContactOptions(name, phone){
+
+    const modal =
+        document.getElementById("contactModal");
+
+    const modalName =
+        document.getElementById("contactModalName");
+
+    const modalPhone =
+        document.getElementById("contactModalPhone");
+
+    const callLink =
+        document.getElementById("contactCall");
+
+    const whatsappLink =
+        document.getElementById("contactWhatsApp");
+
+    modalName.textContent =
+        name || "যোগাযোগ";
+
+    modalPhone.textContent =
+        phone;
+
+    callLink.href =
+        "tel:" + phone;
+
+    whatsappLink.href =
+        "https://wa.me/" +
+        makeWhatsAppNumber(phone);
+
+    modal.classList.add("show");
+}
+
+
+function closeContactOptions(){
+
+    const modal =
+        document.getElementById("contactModal");
+
+    modal.classList.remove("show");
+}
+
+
+function createMemberCard(
+    title,
+    name,
+    phone,
+    photo
+){
+
+    const card =
+        document.createElement("div");
+
+    card.className =
+        "card";
+
+
+    const person =
+        document.createElement("div");
+
+    person.className =
+        "person";
+
+
+    if(photo){
+
+        const img =
+            document.createElement("img");
+
+        img.className =
+            "person-img";
+
+        img.src =
+            photo;
+
+        img.alt =
+            name || title;
+
+        img.loading =
+            "lazy";
+
+        person.appendChild(img);
+
+    }
+    else{
+
+        person.textContent =
+            "👤";
+
+    }
+
+
+    const position =
+        document.createElement("div");
+
+    position.className =
+        "position-title";
+
+    position.textContent =
+        title;
+
+
+    const h3 =
+        document.createElement("h3");
+
+    h3.textContent =
+        name && name.trim()
+        ? name
+        : "নাম যোগ করা হয়নি";
+
+
+    card.appendChild(person);
+    card.appendChild(position);
+    card.appendChild(h3);
+
+
+    if(phone && phone.trim()){
+
+        const p =
+            document.createElement("p");
+
+        const button =
+            document.createElement("button");
+
+        button.type =
+            "button";
+
+        button.className =
+            "phone-trigger";
+
+        button.textContent =
+            "📞 " + phone.trim();
+
+        button.onclick =
+            function(){
+
+                openContactOptions(
+                    name || title,
+                    phone.trim()
+                );
+
+            };
+
+        p.appendChild(button);
+
+        card.appendChild(p);
+
+    }
+    else{
+
+        const p =
+            document.createElement("p");
+
+        p.className =
+            "no-phone";
+
+        p.textContent =
+            "ফোন নম্বর যোগ করা হয়নি";
+
+        card.appendChild(p);
+
+    }
+
+
+    return card;
+
+}
+
+
+/* =====================================================
+   LOAD COMMITTEE
+===================================================== */
+
+function loadCommittee(data){
+
+    const box =
+        document.getElementById(
+            "committeeCards"
+        );
+
+    box.innerHTML = "";
+
+    const members =
+        data.members || {};
+
+
+    /* ১৫টি পদ */
+
+    positions.forEach(
+    function(position){
+
+        const member =
+            members[position] || {};
+
+        const card =
+            createMemberCard(
+                position,
+                member.name || "",
+                member.phone || "",
+                member.photo || ""
+            );
+
+        box.appendChild(card);
+
+    });
+
+
+    /* ১৬টি সাধারণ সদস্য */
+
+    for(
+        let i = 1;
+        i <= 16;
+        i++
+    ){
+
+        const key =
+            "সদস্য " + i;
+
+        const member =
+            members[key] || {};
+
+        const card =
+            createMemberCard(
+                key,
+                member.name || "",
+                member.phone || "",
+                member.photo || ""
+            );
+
+        box.appendChild(card);
+
+    }
+
+}
+
+
+/* =====================================================
+   LOAD COMMITTEE
+===================================================== */
+
+function loadCommittee(data){
+
+    const box =
+        document.getElementById(
+            "committeeCards"
+        );
+
+
+    box.innerHTML = "";
+
+
+    const members =
+        data.members || {};
+
+
+    let hasData = false;
+
+
+    positions.forEach(
+    function(position){
+
+        const member =
+            members[position] || {};
+
+
+        if(
+            member.name ||
+            member.phone
+        ){
+
+            hasData = true;
+
+        }
+
+
+        const card =
+            createMemberCard(
+                position,
+                member.name || "",
+                member.phone || "",
+                member.photo || ""
+            );
+
+
+        box.appendChild(card);
+
+    });
+
+
+    for(
+        let i=1;
+        i<=16;
+        i++
+    ){
+
+        const key =
+            "সদস্য " + i;
+
+
+        const member =
+            members[key] || {};
+
+
+        if(
+            member.name ||
+            member.phone
+        ){
+
+            hasData = true;
+
+        }
+
+
+        const card =
+            createMemberCard(
+                "সদস্য",
+                member.name || key + "-এর নাম",
+                member.phone || "",
+                member.photo || ""
+            );
+
+
+        box.appendChild(card);
+
+    }
+
+}
+
+
+/* =====================================================
+   LOAD SCHEDULE
+===================================================== */
+
+function loadSchedule(data){
+
+    const schedule =
+        data.schedule || {};
+
+
+    const values = [
+
+        [
+            "shasthi",
+            "schedule-shasthi",
+            "সন্ধ্যা ৭:০০ — বোধন"
+        ],
+
+        [
+            "saptami",
+            "schedule-saptami",
+            "সকাল ৮:০০ — পূজা"
+        ],
+
+        [
+            "ashtami",
+            "schedule-ashtami",
+            "সকাল ১০:০০ — অঞ্জলি"
+        ],
+
+        [
+            "navami",
+            "schedule-navami",
+            "সন্ধ্যা ৭:০০ — আরতি"
+        ],
+
+        [
+            "dashami",
+            "schedule-dashami",
+            "বিকাল ৪:০০ — বিসর্জন"
+        ]
+
+    ];
+
+
+    values.forEach(
+    function(item){
+
+        const value =
+            schedule[item[0]];
+
+
+        const element =
+            document.getElementById(
+                item[1]
+            );
+
+
+        if(!element){
+
+            return;
+
+        }
+
+
+        if(
+            value &&
+            value.trim()
+        ){
+
+            element.textContent =
+                value;
+
+        }
+
+        else{
+
+            element.textContent =
+                item[2];
+
+        }
+
+    });
+
+}
+
+
+/* =====================================================
+   LOAD NOTICE
+===================================================== */
+
+function loadNotice(data){
+
+    const notice =
+        data.notice;
+
+
+    const element =
+        document.getElementById(
+            "noticeText"
+        );
+
+
+    if(
+        notice &&
+        notice.trim()
+    ){
+
+        element.textContent =
+            notice;
+
+    }
+
+}
+
+
+/* =====================================================
+   LOAD CONTACT
+===================================================== */
+
+function loadContact(data){
+
+    const contact =
+        data.contact || {};
+
+
+    const village =
+        contact.village ||
+        "রঘুপুর";
+
+
+    const upazila =
+        contact.upazila ||
+        "ওসমানীনগর";
+
+
+    const district =
+        contact.district ||
+        "সিলেট";
+
+
+    const phone =
+        contact.phone ||
+        "01323688596";
+
+
+    document.getElementById(
+        "contactVillage"
+    ).textContent =
+        village;
+
+
+    document.getElementById(
+        "contactUpazila"
+    ).textContent =
+        upazila;
+
+
+    document.getElementById(
+        "contactDistrict"
+    ).textContent =
+        district;
+
+
+    const phoneLink =
+        document.getElementById(
+            "contactPhoneLink"
+        );
+
+
+    phoneLink.textContent =
+        phone;
+
+
+    phoneLink.href =
+        "tel:" + phone;
+
+}
+
+
+
+
+/* =====================================================
+   LOAD GALLERY
+===================================================== */
+
+function loadGallery(data){
+
+    const gallery =
+        Array.isArray(data.gallery)
+        ? data.gallery
+        : [];
+
+    const box =
+        document.getElementById("galleryBox");
+
+    if(!box){
+        return;
+    }
+
+    if(!gallery.length){
+        box.innerHTML = `
+            <div class="gallery-empty">
+                🖼️<br>
+                গ্যালারি প্রস্তুত করা হচ্ছে।
+            </div>`;
+        return;
+    }
+
+    box.innerHTML = gallery.map(function(item){
+
+        const url = escapeHTML(item.url || "");
+        const caption = escapeHTML(item.caption || "");
+
+        return `
+            <div class="gallery-item"
+                 onclick="openGalleryImage('${url}')">
+
+                <img
+                    src="${url}"
+                    alt="${caption || "পূজা মন্ডপের ছবি"}"
+                    loading="lazy">
+
+                ${caption ? `<div class="gallery-caption">${caption}</div>` : ""}
+
+            </div>`;
+
+    }).join("");
+}
+
+function escapeHTML(value){
+    return String(value || "")
+        .replace(/&/g,"&amp;")
+        .replace(/</g,"&lt;")
+        .replace(/>/g,"&gt;")
+        .replace(/\"/g,"&quot;")
+        .replace(/'/g,"&#039;");
+}
+
+window.openGalleryImage = function(url){
+    window.open(url,"_blank","noopener,noreferrer");
+};
+
+
+/* =====================================================
+   REAL-TIME FIREBASE LISTENER
+===================================================== */
+
+onSnapshot(
+
+    siteRef,
+
+    function(snapshot){
+
+        if(
+            !snapshot.exists()
+        ){
+
+            console.log(
+                "Firebase document এখনো তৈরি হয়নি।"
+            );
+
+            return;
+
+        }
+
+
+        const data =
+            snapshot.data();
+
+
+        /*
+         * এখানে Firebase-এর data
+         * Main Website-এ বসানো হচ্ছে।
+         */
+
+
+        loadCommittee(data);
+
+        loadSchedule(data);
+
+        loadNotice(data);
+
+        loadGallery(data);
+
+        loadContact(data);
+
+
+        console.log(
+            "Firebase data updated."
+        );
+
+    },
+
+    function(error){
+
+        console.error(
+            "Firebase error:",
+            error
+        );
+
+    }
+
+);
+
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+/*
+   ১৭ অক্টোবর ২০২৬
+   Bangladesh time (+06:00)
+*/
+
+const PUJA_DATE =
+    "2026-10-17T00:00:00+06:00";
+
+
+function updateCountdown(){
+
+    const target =
+        new Date(
+            PUJA_DATE
+        ).getTime();
+
+
+    const now =
+        Date.now();
+
+
+    const difference =
+        target - now;
+
+
+    const countdown =
+        document.getElementById(
+            "countdown"
+        );
+
+
+    const finished =
+        document.getElementById(
+            "countdownFinished"
+        );
+
+
+    if(
+        difference <= 0
+    ){
+
+        countdown.style.display =
+            "none";
+
+        finished.style.display =
+            "block";
+
+        return;
+
+    }
+
+
+    const days =
+        Math.floor(
+            difference /
+            86400000
+        );
+
+
+    const hours =
+        Math.floor(
+            (
+                difference %
+                86400000
+            ) /
+            3600000
+        );
+
+
+    const minutes =
+        Math.floor(
+            (
+                difference %
+                3600000
+            ) /
+            60000
+        );
+
+
+    const seconds =
+        Math.floor(
+            (
+                difference %
+                60000
+            ) /
+            1000
+        );
+
+
+    document.getElementById(
+        "days"
+    ).textContent =
+        String(days).padStart(
+            2,
+            "0"
+        );
+
+
+    document.getElementById(
+        "hours"
+    ).textContent =
+        String(hours).padStart(
+            2,
+            "0"
+        );
+
+
+    document.getElementById(
+        "minutes"
+    ).textContent =
+        String(minutes).padStart(
+            2,
+            "0"
+        );
+
+
+    document.getElementById(
+        "seconds"
+    ).textContent =
+        String(seconds).padStart(
+            2,
+            "0"
+        );
+
+}
+
+
+updateCountdown();
+
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+
+document.addEventListener(
+    "keydown",
+    function(event){
+
+        if(event.key === "Escape"){
+            closeContactOptions();
+        }
+
+    }
+);
+
+</script>
+
+</body>
+
+</html>
